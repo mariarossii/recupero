@@ -22,5 +22,23 @@ namespace Recupero
             this.risultato = risultato; 
             this.marcatori = marcatori;
         }
+
+        public string toString()
+        {
+            return squadraCasa + squadraFuori + anno.ToString() + risultato + marcatori;
+        } 
+
+        public string Qualita()
+        {
+            if (risultato == "0-0")
+            {
+                return "partita noiosa";
+            }
+            //non gestito il caso di bella partita
+            else 
+            {
+                return "Partita normale";
+            }
+        }
     }
 }
