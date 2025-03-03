@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="squadraIn" HorizontalAlignment="Left" Margin="84,112,0,0" TextWrapping="Wrap" Text="Squadra in casa" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="squadraOut" HorizontalAlignment="Left" Margin="84,155,0,0" TextWrapping="Wrap" Text="Squadra fuori casa" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="anno" HorizontalAlignment="Left" Margin="84,202,0,0" TextWrapping="Wrap" Text="anno" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="risultato" HorizontalAlignment="Left" Margin="84,248,0,0" TextWrapping="Wrap" Text="risultato" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nominativi" HorizontalAlignment="Left" Margin="84,288,0,0" TextWrapping="Wrap" Text="nominativi marcatori" VerticalAlignment="Top" Width="120"/>
+        <Button Content="crea partita" HorizontalAlignment="Left" Margin="84,333,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
 
     </Grid>
 </Window>

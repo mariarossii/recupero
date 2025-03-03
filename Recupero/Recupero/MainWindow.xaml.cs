@@ -20,5 +20,11 @@ namespace Recupero
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Partita partita = new Partita(squadraIn.Text, squadraOut.Text, anno.Text, risultato.Text, nominativi.Text);
+            //non so come continuare
+        }
     }
 }
