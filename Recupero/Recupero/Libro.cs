@@ -26,9 +26,46 @@ namespace Recupero
             partite.Add(nuovaPartita);
         }
 
-        public Partita CercaPerAnno(int anno)
+        public List<Partita> CercaPerAnno(int anno)
         {
-            
+            List<Partita> PartiteAnnoDato= new List<Partita> ();
+
+            int i = 0;
+
+            do
+            {
+                if (partite[i].anno == anno)
+                {
+                    PartiteAnnoDato.Add(partite[i]);
+                }
+                i++;
+
+            }while(i== partite.Count ); 
+
+            return PartiteAnnoDato; 
+        }
+
+        public List<Partita> CercaSquadra(string squadra)
+        {
+            List<Partita> PartiteSquadra = new List<Partita>();
+
+            int i = 0;
+
+            do
+            {
+                if (partite[i].squadaCasa == squadra || partite[i].squadraFuori)
+                {
+                    PartiteSquadra.Add(partite[i]);
+                }
+                i++;
+
+            } while (i == partite.Count);
+            return PartiteSquadra;
+        }
+
+        public int PartiteInserite()
+        {
+            return partite.Count;
         }
 
     }
