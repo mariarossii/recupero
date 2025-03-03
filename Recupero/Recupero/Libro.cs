@@ -8,6 +8,7 @@ namespace Recupero
 {
     internal class Libro
     {
+        // dichiarazione variabili
         private string casa;
         private int pagine;
         private string titolo;
